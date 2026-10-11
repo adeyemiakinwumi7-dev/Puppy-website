@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyPaws</title>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">CozyPaws <img src="IMAGE/paws.jpeg" width="20px" alt=""></div>
+        <nav class="navlink">
+            <a href="">Home</a>
+            <a href="">Shop</a>
+            <a href="">Delivery and Payment</a>
+            <a href="">Brands</a>
+            <a href="">Blog</a>
+        </nav>
+        <button class="navbut">Place Order</button>
+    </header>
+    <section class="super">
+        <div class="super-text">
+            <h1>Everything for Happy Pets <br> Delivered with Love </h1>
+            <p>Premiun Food, Toys, and Essentials for your Furry Family members </p>
+        </div> 
+        <div class="super-buttons">
+            <button class="primary-btn">Order now</button>
+            <button class="secondary-btn">View Menu</button>
+        </div>
+        <div class="super-image">
+            <img src="IMAGE/puppy.jpeg" class="slide-in-bck-center">
+        </div>
+    </section>
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: o;
+        box-sizing: border-box;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 60px;
+        background-color:rgb(104, 168, 104);
+        
+    }
+    .logo{
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+    .navlink{
+        display: flex;
+        gap: 30px;
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .navbut{
+        background-color: rgb(223, 176, 59);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .super{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 60px;
+        min-height: 80vh;
+        gap: 10px;
+        background-color: rgb(248, 245, 231);
+    }
+    .super-text{
+        flex: 1;
+    }
+    .super-text h1{
+        font-size: 40px;
+        line-height: 1;
+        color: darkgoldenrod;
+        margin-bottom: 20px;
+    }
+    .super-text p{
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1;
+        color:black;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    .super-buttons{
+        display: flex;
+        gap: 15px;
+    }
+    .primary-btn{
+        background-color: darkgoldenrod;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .primary-btn:hover{
+        background-color: black;
+    }
+    .secondary-btn {
+        background-color: darkgoldenrod;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .secondary-btn:hover{
+        background-color: black;
+    }
+    .super-image{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        border: none;
+    }
+    img{
+        border-radius: 20px;
+    }
+    /*super image animation*/
+    .slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+/*RESPONSIVENESS*/
+
+</style>
+</html>
